@@ -1,0 +1,10 @@
+# hello_world.py
+
+def write_greetings(filename, number_of_lines):
+    with open(filename, 'w') as file:
+        for i in range(number_of_lines):
+            file.write(f"Hello, World! This is line {i + 1}\n")
+
+if __name__ == "__main__":
+    write_greetings("greetings.txt", 5)
+    print("Greetings written to greetings.txt")
